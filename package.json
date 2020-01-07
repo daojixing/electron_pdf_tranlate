@@ -1,0 +1,30 @@
+{
+  "name": "Electron-PDF-Viewer",
+  "version": "1.0.0",
+  "description": "A pdf viewer built with electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . Electron-PDF-Viewer --overwrite --platform=linux --arch=x64 --prune=true --out=dist   --icon='icon.png' --asar",
+    "package-x64": "electron-packager .  Electron-PDF-Viewer  --overwrite --platform=linux --arch=x64  ---icon='icon.png' --prune=true --out=dist --asar",
+    "buildwin": "electron-packager . Electron-PDF-Viewer-master --overwrite --platform=win32 --arch=ia32 --prune=true --out=dist --version-string.CompanyName=dotenorio --version-string.FileDescription='Electron-PDF-Viewer-master' --version-string.ProductName='Electron-PDF-Viewer-master' --icon='icon.png' --asar"
+  },
+  "repository": "https://github.com/praharshjain/Electron-PDF-Viewer",
+  "keywords": [
+    "Electron",
+    "PDF",
+    "viewer",
+    "PDF.js"
+  ],
+  "author": "Praharsh Jain",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^4.1.4",
+    "electron-packager": "^14.1.0"
+  },
+  "dependencies": {
+    "translation.js": "^0.7.12",
+    "request": "^2.88.0",
+    "fs": "^0.0.1-security"
+  }
+}
